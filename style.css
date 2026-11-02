@@ -1,57 +1,44 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Changa+One:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap');
 
-
-.changa-one-regular {
-  font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+/* Fontes */
+.interarea {
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
 }
 
-.changa-one-regular-italic {
-  font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+.header {
+    font-family: "Roboto Slab", serif;
 }
-
-
-.roboto-slab {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
-
-#Interarea{
-
-     font-family: "Changa One", sans-serif;
-     font-weight: 400;
-     
-}
-
-#header {
-
-font-family: "Roboto Slab", serif;
-
-}
-
 
 .cairo {
-  font-family: "Cairo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+    font-family: "Cairo", sans-serif;
+    font-weight: 200;
 }
 
+/* Animações dos elementos da página */
+.animar.ativo {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
 
-#cairo {
-  font-family: "Cairo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+/* Animação do Header Minimizado (Círculo) */
+.header-circulo {
+    width: 4rem !important;        /* 64px */
+    height: 4rem !important;       /* 64px */
+    border-radius: 9999px !important;
+    left: 2rem !important;        /* Fixa à esquerda */
+    transform: translateX(0) !important;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+/* Esconde o menu original no modo círculo */
+.header-circulo #header-content {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Revela o ícone ☰ no modo círculo */
+.header-circulo #btn-abrir-header {
+    display: flex !important;
 }
