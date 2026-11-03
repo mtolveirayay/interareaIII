@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site-Interárea2026</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Changa+One:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white overflow-x-hidden"> 
+
+  
+    <section id="main-header" class="w-[90vw] h-16 flex items-center justify-between bg-amber-600 rounded-3xl fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-4 transition-all duration-500 ease-in-out px-4 ">
+        
+        <div id="header-content" class="flex w-full items-center justify-between transition-opacity duration-300 header">
+            <div class="flex items-center space-x-4">
+                <img src="sesi.png" alt="Imagem logo escola sesi" class="w-40 object-contain">
+                <p class="text-sm text-black hidden sm:flex">Projeto Interárea</p>
+            </div>
+            
+            <ul class="flex list-none space-x-6 m-0 p-0 items-center">
+                <li class="text-lg text-black flex items-center">
+                    <a href="https://www.escolasesiba.com.br/nossas-escolas/cama%C3%A7ari/" class="hover:text-red-600 transition text-sm">Escola SESI</a>
+                </li>
+                
+                <li class="flex items-center relative text-sm text-white list-none"> 
+                    <details class="group">
+                        <summary class="text-black cursor-pointer hover:text-red-600 transition list-none mr-4 sm:mr-8">
+                            Outros Sites
+                        </summary> 
+
+                        <div class="absolute right-0 mt-2 w-48 bg-amber-600 border border-black rounded-md shadow-xl p-2 z-10">
+                            <a href="site1.html" class="block px-4 py-2 text-sm text-black hover:text-white hover:bg-orange-800 transition rounded">
+                                Sobre os alunos
+                            </a>
+                            <a href="site2.html" class="block px-4 py-2 text-sm text-black hover:text-white hover:bg-orange-800 transition rounded">
+                                Nossa pesquisa
+                            </a>
+                        </div>
+                    </details>
+                </li>
+            </ul>
+        </div>
+
+        <button id="btn-abrir-header" class="hidden absolute inset-0 w-full h-full flex items-center justify-center text-black font-bold text-xl hover:scale-110 transition-transform">
+            ☰
+        </button>
+    </section>
+
+    <main> 
+        <!-- Primeira Parte -->
+        <section class="w-full min-h-screen flex  items-center justify-center z-0 relative">
+            <div class="absolute inset-0 bg-[url('camaçari.jpg')] bg-cover bg-center bg-no-repeat blur-md z-0"></div>
+
+            <div class="relative z-10 text-white flex flex-col items-start px-6 max-w-6xl w-full justify-between min-h-[70vh] my-auto">
+                <div class="flex flex-col items-start w-full">
+                    <p class="text-6xl md:text-9xl text-amber-800 drop-shadow-[0_4px_30px_rgba(30,15,5,1)] font-bold interarea">Projeto Interárea</p>
+                    <div class="bg-white rounded-md w-full h-[3px] my-4"></div>
+                    <p class="text-xl md:text-3xl interarea">A importância de uma história contada por quem viveu</p>
+                </div>
+
+                <div class="flex flex-row space-x-6 items-center bg-white/30 p-4 rounded-xl backdrop-blur-sm mt-12">
+                    <img src="SENAI.svg" alt="Logo SENAI" class="w-28 md:w-40">
+                    <img src="ISESI.png" alt="Logo SESI" class="w-28 md:w-40">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Transição -->
+        <section class="relative w-full h-[30vh]" id="transicao-jogo">
+            <div class="sticky top-0 w-full h-[20vh]  flex items-center justify-center">
+                <div id="paine" class="inset-0 absolute bg-black z-20 translate-y-full transition-transform duration-75"></div>
+            </div>
+
+            <div class="relative z-30 flex flex-col items-center justify-center text-center">
+                <p class="text-amber-600 text-6xl translate-y-8 transition-all duration-700 animar drop-shadow-[0_10px_30px_rgba(245,158,11,0.6)] interarea"> Trilha de vozes </p>
+            </div>
+        </section>
+
+        <!-- Seções das Cartas -->
+        <section class="w-full min-h-screen flex items-center justify-center p-6 md:p-12 relative">
+            <div class="max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 animar">
+                <img src="..." alt="foto de uma das cartas" class="border-2 border-white w-72 h-72 md:w-[50vh] md:h-[50vh] object-cover rounded-lg shadow-lg shrink-0">
+                
+                <div class="flex flex-col max-w-xl">
+                    <h2 class="text-orange-700 text-2xl md:text-4xl font-bold mb-4 interarea">Explicando sobre o jogo</h2>
+                    <p class="text-base md:text-lg text-white cairo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim neque labore id sapiente animi corrupti vel assumenda officiis, facilis consequatur, in sunt magnam beatae deleniti nulla eum dolorem itaque!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full min-h-screen flex items-center justify-center p-6 md:p-12">
+            <div class="max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 animar">
+                <img src="..." alt="foto de uma das cartas" class="border-2 border-white w-72 h-72 md:w-[50vh] md:h-[50vh] object-cover rounded-lg shadow-lg shrink-0">
+                
+                <div class="flex flex-col max-w-xl">
+                    <h2 class="text-orange-700 text-2xl md:text-4xl font-bold mb-4 interarea">Carta (nome da carta)</h2>
+                    <p class="text-base md:text-lg text-white cairo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim neque labore id sapiente animi corrupti vel assumenda officiis, facilis consequatur, in sunt magnam beatae deleniti nulla eum dolorem itaque!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full min-h-screen flex items-center justify-center p-6 md:p-12">
+            <div class="max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 animar">
+                <img src="..." alt="foto de uma das cartas" class="border-2 border-white w-72 h-72 md:w-[50vh] md:h-[50vh] object-cover rounded-lg shadow-lg shrink-0">
+                
+                <div class="flex flex-col max-w-xl">
+                    <h2 class="text-orange-700 text-2xl md:text-4xl font-bold mb-4 interarea">Carta (nome da carta)</h2>
+                    <p class="text-base md:text-lg text-white cairo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim neque labore id sapiente animi corrupti vel assumenda officiis, facilis consequatur, in sunt magnam beatae deleniti nulla eum dolorem itaque!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full min-h-screen flex items-center justify-center p-6 md:p-12">
+            <div class="max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 animar">
+                <img src="..." alt="foto de uma das cartas" class="border-2 border-white w-72 h-72 md:w-[50vh] md:h-[50vh] object-cover rounded-lg shadow-lg shrink-0">
+                
+                <div class="flex flex-col max-w-xl">
+                    <h2 class="text-orange-700 text-2xl md:text-4xl font-bold mb-4 interarea">Carta (nome da carta)</h2>
+                    <p class="text-base md:text-lg text-white cairo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim neque labore id sapiente animi corrupti vel assumenda officiis, facilis consequatur, in sunt magnam beatae deleniti nulla eum dolorem itaque!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full min-h-screen flex items-center justify-center p-6 md:p-12">
+            <div class="max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 animar">
+                <img src="..." alt="foto de uma das cartas" class="border-2 border-white w-72 h-72 md:w-[50vh] md:h-[50vh] object-cover rounded-lg shadow-lg shrink-0">
+                
+                <div class="flex flex-col max-w-xl">
+                    <h2 class="text-orange-700 text-2xl md:text-4xl font-bold mb-4 interarea">Carta (nome da carta)</h2>
+                    <p class="text-base md:text-lg text-white cairo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim neque labore id sapiente animi corrupti vel assumenda officiis, facilis consequatur, in sunt magnam beatae deleniti nulla eum dolorem itaque!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
