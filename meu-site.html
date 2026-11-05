@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>INTERAREA DE LINGUAGENS</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <main class="min-h-screen bg-[#070B18] text-white">
+
+ 
+    <section class="flex min-h-[70vh] flex-col items-center justify-center gap-6 px-6 text-center">
+
+      <p class="text-sm uppercase tracking-[0.4em] text-white/80 drop-shadow-[0_0_20px_orange] md:text-base">
+        Sete estudantes, um projeto escolar
+      </p>
+
+      <h2 class="text-5xl font-black md:text-7xl">
+
+        INTERAREA
+
+        <span class="mt-2 block text-orange-600 drop-shadow-[0_0_25px_orange] md:text-7xl">
+          DE LINGUAGENS
+        </span>
+
+      </h2>
+
+      <p class="max-w-lg text-gray-400">
+        Conheça os sete estudantes por trás do nosso projeto.
+      </p>
+
+    </section>
+
+
+    <!-- EQUIPE -->
+    <section id="equipe" class="px-6 py-20 md:px-12">
+
+      <div class="mx-auto max-w-6xl">
+
+        <p class="mb-3 text-sm uppercase tracking-[0.3em] text-purple-400">
+          Quem faz acontecer
+        </p>
+
+        <h2 class="mb-10 text-3xl font-bold md:text-4xl">
+          Nossa equipe
+        </h2>
+
+
+        <!-- CARDS -->
+        <div
+          id="lista-integrantes"
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
+        >
+        </div>
+
+
+        <!-- PERFIL -->
+        <div
+          id="perfil"
+          class="hidden mt-12 grid gap-8 rounded-3xl border border-white/30 bg-white/[0.03] p-6 md:grid-cols-[220px_1fr] md:p-10"
+        >
+
+          <!-- FOTO -->
+          <div
+            id="foto-container"
+            class="relative min-h-52 overflow-hidden rounded-2xl border border-purple-500/30 bg-[#151126]"
+          >
+          </div>
+
+
+          <!-- INFORMAÇÕES -->
+          <div>
+
+            <p class="mb-2 text-sm uppercase tracking-[0.3em] text-purple-400">
+              Conheça o integrante
+            </p>
+
+            <h3
+              id="nome-perfil"
+              class="mb-2 text-3xl font-black"
+            >
+            </h3>
+
+            <p
+              id="funcao-perfil"
+              class="mb-6 text-purple-300"
+            >
+            </p>
+
+
+            <div class="space-y-5 text-gray-300">
+
+              <div>
+
+                <h4 class="mb-1 font-bold text-white">
+                  Sobre mim
+                </h4>
+
+                <p id="descricao-perfil"></p>
+
+              </div>
+
+
+              <div>
+
+                <h4 class="mb-1 font-bold text-white">
+                  Minha contribuição
+                </h4>
+
+                <p id="contribuicao-perfil"></p>
+
+              </div>
+
+
+              <div>
+
+                <h4 class="mb-1 font-bold text-white">
+                  Habilidades
+                </h4>
+
+                <p id="habilidades-perfil"></p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500">
+
+      INTERAREA DE LINGUAGENS · Projeto escolar Sesi Milton Santos
+
+    </footer>
+
+  </main>
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    // INTEGRANTES DA EQUIPE
+
+    const integrantes = [
+
+      {
+        id: "Lucas Augusto",
+        nome: "Lucas Augusto",
+        foto: "fotos/lucas.jpeg",
+        funcao: "Desenvolvedor full stack",
+
+        descricao: "Meu nome é Lucas Augusto, tenho 16 anos de idade e estou cursando o ensino médio enquanto faço curso de TI no Senai Cimatec.",
+
+        contribuicao: "Desenvolvi parte do site ao lado de Matheus Bernardo, juntos, entregamos um resultado Web usando frameworks, JavaScript, html5 e etc.",
+
+        habilidades: "JavaScript, Tailwind, Node.js, Next.js, React, HTML5 e CSS3"
+      },
+
+      {
+        id: "Matheus Bernardo",
+        nome: "Matheus Bernardo",
+        foto: "fotos/Matheus Bernardo.jpeg",
+        funcao: "Desenvolvedor front-end",
+
+        descricao: "Meu nome é Matheus Bernardo, tenho 16 anos de idade e estou cursando o ensino médio enquanto faço curso de TI no Senai Cimatec.",
+
+        contribuicao: "Desenvolvi parte do site ao lado de Lucas Augusto, juntos, entregamos um resultado Web usando frameworks, JavaScript, html5 e etc.",
+
+        habilidades: "JavaScript, Tailwind, HTML5, CSS3"
+      },
+
+      {
+        id: "Guilherme",
+        nome: "Guilherme",
+        foto: "fotos/Guilherme.jpeg",
+        funcao: "UI/UX e designer",
+
+        descricao: "Meu nome é Guilherme, tenho 18 anos de idade e estou cursando o ensino médio enquanto faço curso de TI no Senai Cimatec.",
+
+        contribuicao: " Deu ideias para o jogo de tabuleiro, ajudou com a criação das regras do jogo.",
+
+        habilidades: "Criatividade"
+      },
+
+      {
+        id: "Lara",
+        nome: "Lara",
+        foto: "fotos/lara.jpeg",
+        funcao: "UI/UX e designer",
+
+        descricao: "Meu nome é Lara, tenho 16 anos de idade e estou cursando o ensino médio enquanto faço curso de TI no Senai Cimatec.",
+
+        contribuicao: "Ajudou na criação do design e na implementação das regras do jogo.",
+
+        habilidades: "Criatividade"
+      },
+
+      {
+        id: 5,
+        nome: "Lavinia Aguiar",
+        foto: "fotos/Lavinia.jpeg",
+        funcao: "UI/UX e designer",
+
+        descricao: "Meu nome é Lavinia Aguiar, tenho 17 anos de idade e estou cursando o ensino médio enquanto faço curso de TI no Senai Cimatec.",
+
+        contribuicao: "Fez o tabuleiro e as peões, além de ajudar na paleta de cores para o desenvolvimneto do site.",
+
+        habilidades: "Criatividade"
+      },
+
+      {
+        id: 6,
+        nome: "Marcio",
+        foto: "fotos/marcio.jpeg",
+        funcao: "UI/UX e designer",
+
+        descricao: "Meu nome é Marcio, tenho 15 anos de idade e estou cursando o ensino médio enquanto faço curso de TI no Senai Cimatec.",
+
+        contribuicao: "Responsavel por desenvolver a apresentação final do interarea.",
+
+        habilidades: "Colaborador em designer técnico"
+      },
+
+      {
+        id: 7,
+        nome: "Maria Eduarda",
+        foto: "fotos/Maria Eduarda.jpeg",
+        funcao: "UI/UX e designer",
+
+        descricao: "Meu nome é Maria Eduarda, tenho 17 anos de idade e estou cursando o ensino médio enquanto faço curso de TI no Senai Cimatec.",
+
+        contribuicao: "Colaborou com a equipe desenvolvendo as regras das cartas e na paleta de cores.",
+
+        habilidades: "Criatividade."
+      },
+
+      {
+        id: 8,
+        nome: "Thais Barbosa",
+        foto: "fotos/thais.jpeg",
+        funcao: "Professora orientadora",
+
+        descricao: "Meu nome é Thais Barbosa, sou professora orientadora do projeto interarea de linguagens.",
+
+        contribuicao: "Orienta o projeto e fornece suporte técnico e pedagógico.",
+
+        habilidades: "Letrada em inglês e português."
+      }
+
+    ];
+
+
+    // ELEMENTOS DO HTML
+
+    const lista = document.getElementById("lista-integrantes");
+
+    const perfil = document.getElementById("perfil");
+
+    const fotoContainer = document.getElementById("foto-container");
+
+    let selecionado = null;
+
+
+    // CRIAR OS CARDS DOS INTEGRANTES
+
+    integrantes.forEach((integrante) => {
+
+      const botao = document.createElement("button");
+
+      botao.type = "button";
+
+      botao.className = `
+        rounded-2xl
+        border
+        bg-[#151126]
+        px-5
+        py-4
+        text-left
+        transition
+        duration-300
+        hover:border-white
+        hover:shadow-[white_0_0_20px]
+        border-white/30
+      `;
+
+      botao.textContent = integrante.nome;
+
+      botao.addEventListener("click", () => {
+
+        selecionarIntegrante(integrante, botao);
+
+      });
+
+      lista.appendChild(botao);
+
+    });
+
+
+    // SELECIONAR INTEGRANTE
+
+    function selecionarIntegrante(integrante, botaoSelecionado) {
+
+      selecionado = integrante;
+
+      // Atualizar cores dos cards
+
+      const botoes = lista.querySelectorAll("button");
+
+      botoes.forEach((botao, index) => {
+
+        if (integrantes[index].id === integrante.id) {
+
+          botao.classList.remove("border-white/30");
+
+          botao.classList.add(
+            "border-white",
+            "shadow-[gray_0_0_35px]"
+          );
+
+          botao.setAttribute("aria-pressed", "true");
+
+        } else {
+
+          botao.classList.remove(
+            "border-white",
+            "shadow-[gray_0_0_35px]"
+          );
+
+          botao.classList.add("border-white/30");
+
+          botao.setAttribute("aria-pressed", "false");
+
+        }
+
+      });
+
+
+      // Mostrar perfil
+
+      perfil.classList.remove("hidden");
+
+
+      // Atualizar informações
+
+      document.getElementById("nome-perfil").textContent = integrante.nome;
+
+      document.getElementById("funcao-perfil").textContent = integrante.funcao;
+
+      document.getElementById("descricao-perfil").textContent = integrante.descricao;
+
+      document.getElementById("contribuicao-perfil").textContent = integrante.contribuicao;
+
+      document.getElementById("habilidades-perfil").textContent = integrante.habilidades;
+
+
+      // Atualizar foto
+
+      fotoContainer.innerHTML = "";
+
+      if (integrante.foto) {
+
+        const imagem = document.createElement("img");
+
+        imagem.src = integrante.foto;
+
+        imagem.alt = `Foto de ${integrante.nome}`;
+
+        imagem.className = "absolute inset-0 h-full w-full object-cover";
+
+        imagem.onerror = () => {
+
+          fotoContainer.innerHTML = `
+            <div class="flex min-h-52 items-center justify-center">
+              <span class="text-6xl font-black text-purple-400">
+                ${String(integrante.id).padStart(2, "0")}
+              </span>
+            </div>
+          `;
+
+        };
+
+        fotoContainer.appendChild(imagem);
+
+      }
+
+
+      // Rolagem automática até o perfil
+
+      perfil.scrollIntoView({
+
+        behavior: "smooth",
+
+        block: "center"
+
+      });
+
+    }
+
+  </script>
+
+</body>
+</html>

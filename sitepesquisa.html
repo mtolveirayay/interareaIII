@@ -7,30 +7,43 @@
   </head>
   
 
-  <body class="bg-neutral-950 text-white font-sans[-ms-overflow-style:none] [scrollbar-width:none] overflow-y-hidden"> ">
+  <body class="bg-black text-white font-sans[-ms-overflow-style:none] [scrollbar-width:none] overflow-y-hidden">
+
+    <header>
+      <nav class="w-full flex items-center px-6 py-4 bg-black/50 backdrop-blur-md border-b border-white/20 fixed top-0 left-0 z-50">
+        <div class="flex items-center gap-4">
+          <a href="interareasite.html" class="text-amber-500 font-bold text-lg md:text-xl hover:text-amber-400 transition-colors duration-300">
+            Projeto Interárea
+          </a>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="meu-site.html" class="text-amber-500 hover:text-amber-400 transition-colors duration-300 ml-10">
+            Sobre os alunos
+          </a>
+        </div>
+      </nav>
+    </header>
 
 
     <section id="inicio" class="w-full min-h-screen relative flex flex-col items-center justify-center px-6 text-center overflow-hidden">
       
-   
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-900/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
 
-  
       <h1 class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-700 text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">
         Seja muito Bem-vindo
       </h1>
       
       <!-- Texto de introdução -->
-      <p class="text-gray-300 text-lg md:text-xl max-w-3xl mb-10 leading-relaxed font-light">
+      <p class="text-gray-300 text-lg md:text-xl max-w-3xl mb-10 leading-relaxed font-light animar">
         Esse é o nosso trabalho Interárea, que tem como objetivo apresentar a pesquisa sobre as <strong class="text-amber-500 font-medium">mulheres negras e suas contribuições</strong> para a história do 2 de Julho em Camaçari. A pesquisa foi realizada com base em estudos bibliográficos e documentais, buscando compreender como diferentes linguagens produzem, preservam e ressignificam memórias sobre o município, além de analisar experiências de mulheres negras e comunidades tradicionais.
       </p>
         
-      <p class="mb-6 text-sm uppercase tracking-widest text-gray-500 font-semibold">
+      <p class="mb-6 text-sm uppercase tracking-widest text-gray-500 font-semibold animar">
         No que você está interessado?
       </p>
 
       <!-- Botões -->
-      <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+      <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 animar">
         <a href="#apresentacao" class="group relative px-8 py-3 bg-amber-700 text-white font-bold rounded-full shadow-lg shadow-amber-900/40 hover:bg-amber-600 hover:-translate-y-1 transition-all duration-300">
           Nossa apresentação
         </a>
@@ -41,16 +54,14 @@
       </div>
     </section>
 
-  
-    <section id="apresentacao" class="w-full min-h-screen bg-black/50 relative flex flex-col items-center justify-center p-6 pt-16">
+    <section id="apresentacao" class="w-full min-h-screen bg-black/50 relative flex flex-col items-center justify-center p-6 pt-16 animar">
       
-    
-      <div class="w-full max-w-5xl mx-auto rounded-xl ring-1 ring-white/10 shadow-2xl shadow-amber-900/20 bg-neutral-900">
+      <div class="w-full max-w-5xl mx-auto rounded-xl ring-1 ring-white/10 shadow-2xl shadow-amber-900/20 bg-neutral-900 animar">
         <div style="position: relative; width: 100%; padding-top: 56.25%;">   
           <iframe
             loading="lazy"
             style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-            src="https://www.canva.com/design/DAHZQA_rZMI/miVBcl8pRxyGumRbU8cAQA/view?embed"
+            src="https://www.canva.com/design/DAHZsuehoYY/tQ9HWvf1xAYl4MFBYzkkyQ/view?embed" 
             allowfullscreen="allowfullscreen"
             allow="fullscreen"
           >
@@ -58,8 +69,7 @@
         </div>
       </div>
 
-     
-      <a href="#inicio" class="mt-12 mb-6 px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-gray-300 hover:bg-white/20 hover:text-white transition-all duration-300 flex items-center gap-2 text-sm font-medium">
+      <a href="#inicio" class="mt-12 mb-6 px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-gray-300 hover:bg-white/20 hover:text-white transition-all duration-300 flex items-center gap-2 text-sm font-medium animar">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
         </svg>
@@ -68,14 +78,23 @@
       
     </section>
 
+  <section class="overflow-y-auto h-screen" id="pesquisa">
 
-  <section class="overflow-y-auto h-screen " id="pesquisa">
-    <section class="w-[90vw] h-[90vh] mx-auto bg-black">
-        
-      <div>
-        <p></p>
-        <h1 class="text-amber-800 text-4xl font-bold mb-4">Metodologia</h1>
-        <p class="text-white text-md">
+    <!-- Resumo -->
+    <section class="w-[90vw] h-[90vh] mx-auto bg-black flex items-center justify-center rounded-4px animar"><br>
+      <div class="w-[50vw] mx-auto"><br>
+        <h1 class="text-amber-800 text-4xl font-extrabold mb-4">Resumo</h1>
+        <p class="text-white text-justify">
+          Este artigo investiga como diferentes linguagens produzem, preservam, disputam e ressignificam memórias sobre Camaçari (BA) e sobre as experiências de mulheres negras e populações tradicionais, articulando o <strong class="text-bold text-amber-400">2 de Julho</strong>, o <strong class="text-bold text-amber-400">Fogo Simbólico</strong> e o <strong class="text-bold text-amber-400">Julho das Pretas</strong>. Parte da hipótese de que a invisibilidade dessas mulheres decorre dos critérios de registro, das hierarquias linguísticas e das escolhas territoriais que organizaram a memória oficial, e não da ausência de suas vozes. Trata-se de uma pesquisa qualitativa, de caráter bibliográfico e documental, fundamentada nos conceitos de território, corpo-território, corpo-quilombo, amefricanidade, pretuguês e interseccionalidade, com apoio em autoras e autores como Lélia Gonzalez, Beatriz Nascimento e Manzi e Anjos. O texto aborda o racismo e o controle dos corpos, a comunidade quilombola de Cordoaria, a trajetória de Tereza de Benguela, a participação de Maria Quitéria, Maria Felipa e Joana Angélica na Independência da Bahia, a inclusão de Camaçari no percurso do Fogo Simbólico a partir de 2023 e a importância da oralidade como fonte legítima de conhecimento, inclusive na escola. A pesquisa fundamenta o jogo de tabuleiro Trilhas de Vozes, que converte esses conceitos em experiência coletiva de leitura, argumentação, ação corporal e fala em inglês.
+        </p>
+      </div>
+    </section><br>
+
+    <!-- Metodologia -->
+    <section class="w-[90vw] h-[90vh] mx-auto bg-black rounded-2xl flex items-center justify-center animar"><br>
+      <div class="mx-auto w-[50vw]">
+        <h1 class="text-amber-800 text-4xl font-extrabold mb-4">Metodologia</h1>
+        <p class="text-white text-md text-justify">
           Essa é uma pesquisa de caráter qualitativo feita por um estudo
           bibliográfico com o objetivo de compreender como diferentes linguagens
           produzem, preservam e ressignificam memórias sobre o município
@@ -92,20 +111,21 @@
           conceitos pesquisados, das memórias e da oralidade.
         </p>
       </div>
-    </section>
+    </section><br>
 
-    <section class="w-[90vw] h-[90vh] mx-auto bg-black">
-      <div>
-        <h1 class="text-amber-800 text-4xl font-bold mb-4">Conclusão</h1>
-        <p class="text-white text-md">
+    <!-- Conclusão -->
+    <section class="w-[90vw] h-[90vh] mx-auto bg-black flex flex-col items-center animar">
+      <div class="mx-auto w-[50vw] overflow-y-auto h-[50vh] scrollbar-none">
+        <h1 class="text-amber-800 text-4xl font-extrabold mb-4">Conclusão</h1>
+        <p class="text-white text-md text-justify">
           Este trabalho partiu da pergunta sobre quem são, foram e onde estão as
           mulheres negras que construíram e continuam construindo as memórias do
           2 de Julho em Camaçari, e sobre como investigar e interpretar essas
           vozes e fazer com que elas pudessem ocupar o território. A revisão
           bibliográfica e documental mostrou que o território é feito de
           relações sociais e de poder, mas também de narrativas, corpos e
-          linguagens. Os conceitos de corpo-território, corpo-quilombo,
-          amefricanidade, pretuguês e interseccionalidade permitiram ler a
+          linguagens. Os conceitos de <strong class="text-amber-400 font-bold">corpo-território, corpo-quilombo,
+          amefricanidade, pretuguês e interseccionalidade</strong> permitiram ler a
           experiência dessas mulheres como atravessada por raça, gênero, classe
           e pertencimento, reconhecendo as desigualdades sem reduzi-las à
           condição de vítimas. As trajetórias de Tereza de Benguela, Maria
@@ -137,23 +157,30 @@
           passem a ocupar o território que ajudaram a construir.
         </p>
       </div>
-    </section>
+      <p class="text-gray-500 mt-10 text-sm text-justify">Deslize para baixo para ler mais...</p>
+    </section><br>
 
-    <footer>
-        <section  class="w-[35vw] h-[35vh] mx-10 !bg-white flex rounded-2xl flex-col items-center justify-center">
-          <h1 class="text-amber-800 text-4xl font-bold mb-4">Download da Pesquisa</h1>
-          <p class="text-white text-md">
-            Clique no botão abaixo para baixar a pesquisa completa em PDF.
-          </p>
-      <button
-        class="bg-amber-800 text-white px-4 py-2 rounded hover:bg-amber-700 transition duration-300"
-      >
-        Download da Pesquisa
-      </button>
-        </section>
+    <!-- Footer Download -->
+    <footer class = "w-full h-[40vh] bg-black flex items-center justify-center">
+      <section class="w-[35vw] h-[35vh] mx-10 !bg-black flex rounded-2xl flex-col items-center justify-center border border-amber-800 p-6 animar">
+        <h1 class="text-amber-800 text-4xl font-extrabold mb-4">Download da Pesquisa</h1>
+        <p class="text-white text-md text-justify">
+          Clique no botão abaixo para baixar a pesquisa completa em PDF.
+        </p>
+        <a 
+          href="pesquisa-final.pdf" 
+          download="pesquisa-final.pdf"
+          class="mt-6 mx-auto w-fit flex items-center gap-2 bg-amber-800 hover:bg-amber-700 text-white font-medium px-6 py-3 rounded-xl shadow-md transition-all"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+          </svg>
+          Baixar PDF
+        </a>
+      </section>
     </footer>
 
-    </section>
+  </section>
   
 <!-- 
     
@@ -168,7 +195,15 @@
     *Letras: Branco 
     *Títulos: Amber-800
 
-    
+    *adicionar classe font-extrabold pros titulos 
+    *text-justfy nos textos
+
+    *o nome do site do interárea> interareasite.html
     -->
 
+    <script src="pesquisa.js"></script>
   </body>
+
+
+
+
