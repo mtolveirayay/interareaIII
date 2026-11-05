@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Changa+One:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap');
 
-/* Fontes */
+
 .interarea {
     font-family: "Changa One", sans-serif;
     font-weight: 400;
@@ -15,30 +15,29 @@
     font-weight: 200;
 }
 
-/* Animações dos elementos da página */
 .animar.ativo {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
 
-/* Animação do Header Minimizado (Círculo) */
+
 .header-circulo {
-    width: 4rem !important;        /* 64px */
-    height: 4rem !important;       /* 64px */
+    width: 4rem !important;        
+    height: 4rem !important;     
     border-radius: 9999px !important;
-    left: 2rem !important;        /* Fixa à esquerda */
+    left: 2rem !important;       =
     transform: translateX(0) !important;
     padding: 0 !important;
     cursor: pointer;
 }
 
-/* Esconde o menu original no modo círculo */
+
 .header-circulo #header-content {
     opacity: 0 !important;
     pointer-events: none !important;
 }
 
-/* Revela o ícone ☰ no modo círculo */
+
 .header-circulo #btn-abrir-header {
     display: flex !important;
 }

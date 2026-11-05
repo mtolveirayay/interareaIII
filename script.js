@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     animar.forEach((el) => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(50px)';
-        el.style.transition = 'opacity 2.5s ease-out, transform 2.5s ease-out';
+        el.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
     });
 
    
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         painelPreto.style.transform = `translateY(${100 - progresso * 100}%)`;
 
         
-        if (progresso > 0.90) {
+        if (progresso > 0.1) {
             if (header && !headerMinimizadoPeloScroll) {
                 header.classList.add("header-circulo");
                 headerMinimizadoPeloScroll = true;
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Minimizar ao clicar fora (Área Neutra)
+    
     document.addEventListener("click", (e) => {
         if (!headerMinimizadoPeloScroll || !header) return;
 
